@@ -1,0 +1,13 @@
+.hamburgerBtn {
+  display: none;
+  visibility: none;
+  pointer-events: none;
+}
+
+@media (max-width: 62.5em) {
+  .hamburgerBtn {
+    display: block;
+    visibility: visible;
+    pointer-events: all;
+  }
+}

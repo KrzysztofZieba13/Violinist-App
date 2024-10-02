@@ -1,0 +1,24 @@
+.list {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.openMenuBtn {
+  color: var(--main-dark);
+  display: none;
+}
+
+@media (max-width: 62.5em) {
+  .openMenuBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .list {
+    gap: 5.2rem;
+    justify-self: center;
+  }
+}

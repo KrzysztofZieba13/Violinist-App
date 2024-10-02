@@ -1,0 +1,19 @@
+.images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+  width: 60%;
+}
+
+.imageBox img {
+  width: 45%;
+  border-radius: 5px;
+}
+
+/* BELOW 1248px */
+@media (max-width: 78em) {
+  .images {
+    display: none;
+  }
+}

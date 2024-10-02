@@ -1,0 +1,15 @@
+.text {
+  width: 30rem;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  font-weight: 300;
+  margin-top: 4.4rem;
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 62.5em) {
+  .box {
+    text-align: center;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,17 @@
+.navList {
+  list-style-type: none;
+}
+
+.navItem:link,
+.navItem:visited {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  width: 15rem;
+  color: var(--main-dark);
+  text-decoration: none;
+}
+
+.dimmed {
+  color: var(--main-light-gray) !important;
+}

@@ -1,0 +1,46 @@
+.pageNav {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 8.6rem 1.6rem 1.6rem 16.4rem;
+  border-top-left-radius: 100%;
+  border-bottom-right-radius: 10px;
+  display: block;
+}
+
+.pageNavList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.line {
+  width: 1px;
+  height: 0;
+  margin: 1.2rem 0.8rem 1.2rem 0;
+  background-color: var(--main-dark);
+  align-self: flex-end;
+  transition: all 0.3s;
+  animation: growLine 0.5s ease forwards;
+}
+
+@keyframes growLine {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100px;
+  }
+}
+
+.dimmedLine {
+  background-color: var(--main-light-gray);
+}
+
+@media (max-width: 62.5em) {
+  .pageNav {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}

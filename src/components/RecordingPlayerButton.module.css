@@ -1,0 +1,23 @@
+.button {
+  display: flex;
+}
+
+.playButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-dark);
+  width: 8.5rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.playButton:hover {
+  background-color: var(--main-dark-black);
+}
+
+@media (max-width: 62.5em) {
+  .button {
+    justify-content: center;
+  }
+}

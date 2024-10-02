@@ -1,0 +1,14 @@
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--main-dark);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.3s;
+}
+
+.dimmed a:link,
+.dimmed a:visited {
+  color: var(--main-light-gray);
+}

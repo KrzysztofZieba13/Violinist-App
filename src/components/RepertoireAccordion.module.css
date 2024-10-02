@@ -1,0 +1,55 @@
+.accordion {
+  width: 45rem;
+  font-size: 2rem;
+  font-weight: 300;
+  overflow: hidden;
+}
+
+.panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 1.6rem 1.2rem;
+  transition: all 0.3s;
+}
+
+.panel:hover {
+  background-color: var(--main-light);
+}
+
+.panelList {
+  display: flex;
+  gap: 9.6rem;
+  margin-left: 2.4rem;
+  margin-top: 1.6rem;
+  padding-bottom: 1.2rem;
+  position: relative;
+}
+
+.panelList::after {
+  height: 2px;
+  background-color: var(--main-light);
+  width: calc(100% + 2.4rem);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -2.4rem;
+}
+
+/*BELOW 1248px*/
+@media (max-width: 78em) {
+  .accordion {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 29em) {
+  .accordion {
+    width: 40rem;
+  }
+
+  .panelList {
+    gap: 4.4rem;
+  }
+}

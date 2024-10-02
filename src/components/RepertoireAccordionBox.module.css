@@ -1,0 +1,36 @@
+.accordionBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.2rem;
+  width: 40%;
+}
+
+.textPanel {
+  font-size: 1.4rem;
+  list-style-type: "- ";
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  line-height: 1.5;
+  max-height: 0;
+  overflow: hidden;
+  animation: growPanel 1s ease forwards;
+}
+
+@keyframes growPanel {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 50rem;
+  }
+}
+
+/*BELOW 1248px*/
+@media (max-width: 78em) {
+  .accordionBox {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,108 @@
+.contactFooter {
+  display: flex;
+  flex-direction: column;
+  margin: 1.6rem 0 0 0;
+  height: calc(100vh - 1.6rem);
+  position: relative;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  padding: 10.2rem 2.4rem 0 2.4rem;
+  margin: 0 1.6rem 1.6rem 1.6rem;
+  background: url("../violinist-contact.jpg");
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.imgSmall {
+  display: none;
+  visibility: none;
+}
+
+.telephoneBox {
+  margin-top: 4.4rem;
+}
+
+.facebookBox {
+  margin-top: 4.4rem;
+  justify-self: end;
+  align-self: end;
+}
+
+.facebook {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.contactTitle {
+  font-size: 1.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.contactDetails {
+  font-size: 3.2rem;
+  font-weight: 300;
+  border-bottom: 3px solid var(--main-dark);
+  width: auto;
+  display: inline-block;
+  padding-bottom: 0.8rem;
+  color: var(--main-dark);
+}
+
+.img {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: calc(100% - 32px);
+}
+
+.footer {
+  background-color: var(--main-light);
+  margin: auto 1.6rem 1.6rem 1.6rem;
+  position: relative;
+  padding: 1.6rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  height: 60%;
+  border-radius: 10px;
+}
+
+@media (max-width: 62.5em) {
+  .contact {
+    background-image: none;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .imgSmall {
+    display: block;
+    visibility: visible;
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .telephoneBox,
+  .facebookBox {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .footer {
+    height: 30%;
+  }
+}
+
+@media (max-width: 38em) {
+  .imgSmall {
+    width: 55%;
+  }
+}

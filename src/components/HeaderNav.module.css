@@ -1,0 +1,25 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 2.4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: calc(100% - 3.2rem);
+  margin: 1.6rem;
+  z-index: 100;
+}
+
+.hamburgerBtn {
+  display: none;
+  visibility: none;
+  pointer-events: none;
+}
+
+@media (max-width: 62.5em) {
+  .defaultNavBar {
+    display: none;
+  }
+}

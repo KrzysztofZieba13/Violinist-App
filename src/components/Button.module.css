@@ -1,0 +1,16 @@
+.button:link,
+.button:visited {
+  background-color: var(--main-dark);
+  color: #fff;
+  font-weight: 300;
+  font-family: Roboto;
+  padding: 1.6rem 4.4rem;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #302013;
+  transition: all 0.3s;
+}

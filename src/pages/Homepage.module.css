@@ -1,0 +1,15 @@
+.homepage {
+  background-image: linear-gradient(
+      rgba(255, 234, 197, 0.15),
+      rgba(255, 234, 197, 0.15)
+    ),
+    url("../violinist-bg.jpg");
+  height: calc(100vh - 3.2rem);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 1.6rem;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}

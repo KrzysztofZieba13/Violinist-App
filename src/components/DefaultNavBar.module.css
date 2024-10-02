@@ -1,0 +1,5 @@
+@media (max-width: 62.5em) {
+  .defaultNavBar {
+    display: none;
+  }
+}
